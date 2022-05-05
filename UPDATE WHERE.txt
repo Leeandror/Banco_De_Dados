@@ -1,0 +1,16 @@
+
+CREATE TABLE Senha (
+id_sequencia INT PRIMARY KEY IDENTITY,
+site_acesso varchar(50) not null,
+email_login varchar(50)not null,
+data_insercao date not null,
+autenticacao varchar(30) not null
+)
+
+
+DROP TABLE Senha
+select * from Senha
+
+UPDATE Senha
+SET site_acesso = 'Linkedin'
+WHERE id_sequencia = 3;
